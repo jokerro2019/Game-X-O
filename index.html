@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
+    <title>Game</title>
+    <body>
+    <style>
+        .grid {
+            width: 900px;
+            height: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32.8%;
+            height: 32.5%;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            border: 2px solid red;
+            font-size: 300px;
+        }
+
+        .js-x:before {
+            content: 'X';
+        }
+
+        .js-o:before {
+            content: 'O';
+        }
+        .win {
+            background-color: crimson;
+            color: gold;
+            font-size: 100px;
+            width: 43%;
+            text-align: center;
+            position: absolute;
+            top: 35%;
+            left: 30%;
+            display: none;
+            border-radius: 10%;
+        }
+        span {
+            color: white;
+        }
+    </style>
+    <div class="grid">
+        <div class="box field-1">
+        </div>
+        <div class="box field-2">
+        </div>
+        <div class="box field-3">
+        </div>
+        <div class="box field-4">
+        </div>
+        <div class="box field-5">
+        </div>
+        <div class="box field-6">
+        </div>
+        <div class="box field-7">
+        </div>
+        <div class="box field-8">
+        </div>
+        <div class="box field-9">
+        </div>
+    </div>
+
+    <div class="win win-x">
+        <p>player <span>X</span> win</p>
+    </div>
+    <div class="win win-o">
+        <p>player <span>O</span> win</p>
+    </div>
+    <div class="win draw">
+        <p><span>DRAW</span></p>
+    </div>
+
+    <audio class="audio" src="audio/kirya-pomedorkas-adventures-ost-z_uk-pobedy.mp3"></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>
